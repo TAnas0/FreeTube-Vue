@@ -15,6 +15,7 @@
     "bulma-pro": "^0.1.8",
     "dateformat": "^3.0.3",
     "electron-context-menu": "^0.16.0",
+    "electron-tabs": "~0.12.0",
     "jquery": "^3.4.1",
     "lodash.isequal": "^4.5.0",
     "material-design-icons": "^3.0.1",
