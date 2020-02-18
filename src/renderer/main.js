@@ -7,6 +7,7 @@ import store from './store/index'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+const TabGroup = require('electron-tabs')
 
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -31,4 +32,21 @@ ipcRenderer.on('change-view', (event, data) => {
   if (data.route) {
     router.push(data.route)
   }
+})
+
+const tabGroup = new TabGroup()
+tabGroup.addTab({
+  title: 'Electron',
+  src: 'http://electron.atom.io',
+  visible: true
+})
+tabGroup.addTab({
+  title: 'Search',
+  src: 'http://duckduckgo.com',
+  visible: true
+})
+tabGroup.addTab({
+  title: 'Wikipedia',
+  src: 'http://wikipedia.com',
+  visible: true
 })

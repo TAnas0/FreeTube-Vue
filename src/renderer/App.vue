@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+    <div class="etabs-tabgroup">
+      <div class="etabs-tabs" />
+      <div class="etabs-buttons" />
+    </div>
+    <div class="etabs-views" />
     <top-nav ref="topNav" />
     <side-nav ref="sideNav" />
     <Transition
@@ -22,3 +27,4 @@
 <style src="./themes.css" />
 <style src="./videoJS.css" />
 <style scoped src="./App.css" />
+<style src="./tabs.css" />
